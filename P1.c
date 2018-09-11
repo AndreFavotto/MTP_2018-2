@@ -8,7 +8,7 @@ int main(){
 int i=0, estado=0;
 char bits[256];
 printf("Digite a sequencia de bits para teste: ");
-scanf(%s, bits);
+scanf("%s", bits);
 for(i=0; bits[i]!='\0'; i++){
 	if(bits[i]=='1'){
 		if(estado==0)
