@@ -1,5 +1,6 @@
-//Andre de Oliveira Aguila Favoto
-//11811EAU013
+/*P1.c*/
+/*Andre de Oliveira Aguila Favoto*/
+/*11811EAU013*/
 
 #include <stdio.h>
 
@@ -7,8 +8,7 @@ int main(){
 int i=0, estado=0;
 char bits[256];
 printf("Digite a sequencia de bits para teste: ");
-fflush(stdin);
-gets(bits);
+scanf(%s, bits);
 for(i=0; bits[i]!='\0'; i++){
 	if(bits[i]=='1'){
 		if(estado==0)
@@ -26,11 +26,11 @@ for(i=0; bits[i]!='\0'; i++){
 		else
 		;
 	}
-printf("Estado final: %d \n I) A sequencia original digitada eh: %s", estado, bits);
+printf("Estado final: %d \n I) A sequencia original digitada e: %s", estado, bits);
 if(estado==0)
-printf("\nEh multiplo de 3");
+printf("\nE multiplo de 3");
 else
-printf("\nNao eh multiplo de 3");
+printf("\nNao e multiplo de 3");
 getch();
 return 0;
 }
