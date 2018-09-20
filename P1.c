@@ -31,6 +31,5 @@ if(estado==0)
 printf("\nE multiplo de 3");
 else
 printf("\nNao e multiplo de 3");
-getch();
 return 0;
 }
