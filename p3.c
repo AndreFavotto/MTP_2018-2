@@ -1,3 +1,6 @@
+/*p3.c*/
+/*Andre de Oliveira Aguila Favoto*/
+/*11811EAU013*/
 #include <stdio.h>
 
 int num(char str[]){
