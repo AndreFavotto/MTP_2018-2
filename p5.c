@@ -36,33 +36,33 @@ void gera_numeros(float * vetor, int tam, float min, float max, LCG*r){
 }
 
 float soma(float *inicio_vetor, float *fim_vetor){
-	float E=0;
+	float S=0;
 	float *parcela = inicio_vetor;
 	while(parcela != fim_vetor)
 		{
-			E += *parcela;
+			S += *parcela;
 			parcela++;
 		}
-	return E;
+	return S;
 }
 
 float produto(float *inicio_vetor, float *fim_vetor){
 	float P=1;
-	float *parcela = inicio_vetor;
-	while(parcela != fim_vetor)
+	float *parc = inicio_vetor;
+	while(parc != fim_vetor)
 		{
-			P *= *parcela;
-			parcela++;
+			P *= *parc;
+			parc++;
 		}
 	return P;
 }
 int main(){
 	LCG random; semente(&random, 123456);
-	printf("Serao gerados 50 numeros aleatorios.\n");
+	printf("50 numeros aleatorios serao gerados.\n");
 	float vet[50];
 	gera_numeros(vet, 50, 0.5, 1.5, &random);
 	int opc;
-	scanf("%d",&opc);
+	scanf("%d",&opc); getchar();
 	if(opc == 1)
 	printf("%f",soma(vet, vet+50));
 	if(opc == 2)
