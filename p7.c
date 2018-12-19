@@ -21,7 +21,7 @@ ponto * gerar_pontos(int N) {
 
 void mostrar_pontos(ponto * pbeg, ponto * pend) {
     if(pbeg < pend) {
-        printf("x: %.3lf, y: %.3lf\n", pbeg->x, pend->y);
+        printf("(%.3lf, %.3lf) ", pbeg->x, pbeg->y);
         mostrar_pontos(pbeg+1, pend);
     }
 }
@@ -62,7 +62,7 @@ int main(){
         coordenadas = le_pontos("pontos.dat", &N);
         mostrar_pontos(coordenadas, coordenadas + N);
     } else {
-        printf("Digite o número de pontos: ");
+        printf("Digite o nÃºmero de pontos: ");
 		scanf("%u", &N); getchar();
         coordenadas = gerar_pontos(N);
         grava_pontos(coordenadas, N);
